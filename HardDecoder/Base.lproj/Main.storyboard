@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7M5-4c-sWp"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tej-Ji-lhd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbe-iT-lLD">
+                                <rect key="frame" x="36" y="547" width="303" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ovw-dh-Ecc"/>
+                                </constraints>
+                                <state key="normal" title="h264视频播放/暂停"/>
+                                <connections>
+                                    <action selector="playH264:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RY0-PW-ioo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDV-C1-0s4">
+                                <rect key="frame" x="36" y="607" width="303" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5rd-oE-5dU"/>
+                                </constraints>
+                                <state key="normal" title="pcm音频播放/暂停"/>
+                                <connections>
+                                    <action selector="playAac:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0sc-iy-Xs1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxr-eF-fkG">
+                                <rect key="frame" x="36" y="487" width="303" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xU0-U6-rDH"/>
+                                </constraints>
+                                <state key="normal" title="I帧转图片"/>
+                                <connections>
+                                    <action selector="Iframe2Bitmap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9cT-hy-aES"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aNh-YL-Nof">
+                                <rect key="frame" x="97.5" y="347" width="180" height="120"/>
+                                <color key="backgroundColor" red="0.52264207600000001" green="0.83090859650000004" blue="0.99909281729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Be7-Ux-9cW"/>
+                                    <constraint firstAttribute="width" constant="180" id="RkG-th-GHC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lbe-iT-lLD" secondAttribute="trailing" constant="20" id="7ra-7Y-XKg"/>
+                            <constraint firstItem="Lbe-iT-lLD" firstAttribute="top" secondItem="fxr-eF-fkG" secondAttribute="bottom" constant="20" id="9Kw-Y7-jVL"/>
+                            <constraint firstItem="Tej-Ji-lhd" firstAttribute="top" secondItem="xDV-C1-0s4" secondAttribute="bottom" constant="20" id="BPy-C9-gu6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xDV-C1-0s4" secondAttribute="trailing" constant="20" id="Gvz-IE-9P0"/>
+                            <constraint firstItem="fxr-eF-fkG" firstAttribute="top" secondItem="aNh-YL-Nof" secondAttribute="bottom" constant="20" id="PFu-aM-LyY"/>
+                            <constraint firstItem="xDV-C1-0s4" firstAttribute="top" secondItem="Lbe-iT-lLD" secondAttribute="bottom" constant="20" id="b6R-ir-ycx"/>
+                            <constraint firstItem="Lbe-iT-lLD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="h52-If-a1y"/>
+                            <constraint firstItem="aNh-YL-Nof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="icw-FC-fIi"/>
+                            <constraint firstItem="xDV-C1-0s4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="n4l-fe-2G7"/>
+                            <constraint firstItem="fxr-eF-fkG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="o8s-9L-Gob"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fxr-eF-fkG" secondAttribute="trailing" constant="20" id="sv5-e9-9Zs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="convertImage" destination="aNh-YL-Nof" id="kQY-nm-4uW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="117"/>
+        </scene>
+    </scenes>
+</document>

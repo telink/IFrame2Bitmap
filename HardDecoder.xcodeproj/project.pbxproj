@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25C1CFE12073275E007B2F39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1CFE02073275E007B2F39 /* AppDelegate.m */; };
+		25C1CFE42073275E007B2F39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1CFE32073275E007B2F39 /* ViewController.m */; };
+		25C1CFE72073275E007B2F39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C1CFE52073275E007B2F39 /* Main.storyboard */; };
+		25C1CFE92073275E007B2F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C1CFE82073275E007B2F39 /* Assets.xcassets */; };
+		25C1CFEC2073275E007B2F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C1CFEA2073275E007B2F39 /* LaunchScreen.storyboard */; };
+		25C1CFEF2073275E007B2F39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1CFEE2073275E007B2F39 /* main.m */; };
+		25C1CFF92073275E007B2F39 /* HardDecoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1CFF82073275E007B2F39 /* HardDecoderTests.m */; };
+		25C1D0042073275E007B2F39 /* HardDecoderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D0032073275E007B2F39 /* HardDecoderUITests.m */; };
+		25C1D01920732806007B2F39 /* VideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D01220732806007B2F39 /* VideoPlayer.m */; };
+		25C1D01A20732807007B2F39 /* VideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D01220732806007B2F39 /* VideoPlayer.m */; };
+		25C1D01B20732807007B2F39 /* VideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D01220732806007B2F39 /* VideoPlayer.m */; };
+		25C1D01F20732807007B2F39 /* AudioPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D01520732806007B2F39 /* AudioPlayer.mm */; };
+		25C1D02020732807007B2F39 /* AudioPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D01520732806007B2F39 /* AudioPlayer.mm */; };
+		25C1D02120732807007B2F39 /* AudioPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D01520732806007B2F39 /* AudioPlayer.mm */; };
+		25C1D033207349A2007B2F39 /* VideoPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D030207349A2007B2F39 /* VideoPacket.m */; };
+		25C1D034207349A2007B2F39 /* VideoPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D030207349A2007B2F39 /* VideoPacket.m */; };
+		25C1D035207349A2007B2F39 /* VideoPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D030207349A2007B2F39 /* VideoPacket.m */; };
+		25C1D03B207349ED007B2F39 /* VideoFileParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D039207349EC007B2F39 /* VideoFileParser.m */; };
+		25C1D03C207349ED007B2F39 /* VideoFileParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D039207349EC007B2F39 /* VideoFileParser.m */; };
+		25C1D03D207349ED007B2F39 /* VideoFileParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D039207349EC007B2F39 /* VideoFileParser.m */; };
+		25C1D04D20735018007B2F39 /* PacketSorter.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D04C20735018007B2F39 /* PacketSorter.m */; };
+		25C1D04E20735018007B2F39 /* PacketSorter.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D04C20735018007B2F39 /* PacketSorter.m */; };
+		25C1D04F20735018007B2F39 /* PacketSorter.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D04C20735018007B2F39 /* PacketSorter.m */; };
+		25C1D05220735506007B2F39 /* ParseFrame.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D05120735506007B2F39 /* ParseFrame.mm */; };
+		25C1D05320735506007B2F39 /* ParseFrame.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D05120735506007B2F39 /* ParseFrame.mm */; };
+		25C1D05420735506007B2F39 /* ParseFrame.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D05120735506007B2F39 /* ParseFrame.mm */; };
+		25C1D05C20735878007B2F39 /* GKSurfaceView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D05B20735878007B2F39 /* GKSurfaceView.mm */; };
+		25C1D05D20735878007B2F39 /* GKSurfaceView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D05B20735878007B2F39 /* GKSurfaceView.mm */; };
+		25C1D05E20735878007B2F39 /* GKSurfaceView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D05B20735878007B2F39 /* GKSurfaceView.mm */; };
+		25C1D06C207370F3007B2F39 /* audio.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 25C1D06B207370F2007B2F39 /* audio.pcm */; };
+		25C1D06D207370F3007B2F39 /* audio.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 25C1D06B207370F2007B2F39 /* audio.pcm */; };
+		25C1D06E207370F3007B2F39 /* audio.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 25C1D06B207370F2007B2F39 /* audio.pcm */; };
+		25C1D0702073725B007B2F39 /* video.h264 in Resources */ = {isa = PBXBuildFile; fileRef = 25C1D06F2073725B007B2F39 /* video.h264 */; };
+		25C1D0712073725B007B2F39 /* video.h264 in Resources */ = {isa = PBXBuildFile; fileRef = 25C1D06F2073725B007B2F39 /* video.h264 */; };
+		25C1D0722073725B007B2F39 /* video.h264 in Resources */ = {isa = PBXBuildFile; fileRef = 25C1D06F2073725B007B2F39 /* video.h264 */; };
+		25C1D2B42074AFE5007B2F39 /* iframe.h264 in Resources */ = {isa = PBXBuildFile; fileRef = 25C1D2B32074AFE5007B2F39 /* iframe.h264 */; };
+		25C1D2B52074AFE5007B2F39 /* iframe.h264 in Resources */ = {isa = PBXBuildFile; fileRef = 25C1D2B32074AFE5007B2F39 /* iframe.h264 */; };
+		25C1D2B62074AFE5007B2F39 /* iframe.h264 in Resources */ = {isa = PBXBuildFile; fileRef = 25C1D2B32074AFE5007B2F39 /* iframe.h264 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25C1CFF52073275E007B2F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25C1CFD42073275E007B2F39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25C1CFDB2073275E007B2F39;
+			remoteInfo = HardDecoder;
+		};
+		25C1D0002073275E007B2F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25C1CFD42073275E007B2F39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25C1CFDB2073275E007B2F39;
+			remoteInfo = HardDecoder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25C1CFDC2073275E007B2F39 /* HardDecoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HardDecoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25C1CFDF2073275E007B2F39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		25C1CFE02073275E007B2F39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		25C1CFE22073275E007B2F39 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		25C1CFE32073275E007B2F39 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		25C1CFE62073275E007B2F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		25C1CFE82073275E007B2F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25C1CFEB2073275E007B2F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		25C1CFED2073275E007B2F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25C1CFEE2073275E007B2F39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25C1CFF42073275E007B2F39 /* HardDecoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HardDecoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25C1CFF82073275E007B2F39 /* HardDecoderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HardDecoderTests.m; sourceTree = "<group>"; };
+		25C1CFFA2073275E007B2F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25C1CFFF2073275E007B2F39 /* HardDecoderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HardDecoderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25C1D0032073275E007B2F39 /* HardDecoderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HardDecoderUITests.m; sourceTree = "<group>"; };
+		25C1D0052073275E007B2F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25C1D01220732806007B2F39 /* VideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayer.m; sourceTree = "<group>"; };
+		25C1D01320732806007B2F39 /* VideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayer.h; sourceTree = "<group>"; };
+		25C1D01520732806007B2F39 /* AudioPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioPlayer.mm; sourceTree = "<group>"; };
+		25C1D01820732806007B2F39 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
+		25C1D030207349A2007B2F39 /* VideoPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPacket.m; sourceTree = "<group>"; };
+		25C1D031207349A2007B2F39 /* VideoPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPacket.h; sourceTree = "<group>"; };
+		25C1D039207349EC007B2F39 /* VideoFileParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoFileParser.m; sourceTree = "<group>"; };
+		25C1D03A207349EC007B2F39 /* VideoFileParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoFileParser.h; sourceTree = "<group>"; };
+		25C1D03E20734A2B007B2F39 /* Parameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parameter.h; sourceTree = "<group>"; };
+		25C1D04B20735018007B2F39 /* PacketSorter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketSorter.h; sourceTree = "<group>"; };
+		25C1D04C20735018007B2F39 /* PacketSorter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacketSorter.m; sourceTree = "<group>"; };
+		25C1D05020735506007B2F39 /* ParseFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseFrame.h; sourceTree = "<group>"; };
+		25C1D05120735506007B2F39 /* ParseFrame.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParseFrame.mm; sourceTree = "<group>"; };
+		25C1D05A20735878007B2F39 /* GKSurfaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKSurfaceView.h; sourceTree = "<group>"; };
+		25C1D05B20735878007B2F39 /* GKSurfaceView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GKSurfaceView.mm; sourceTree = "<group>"; };
+		25C1D06B207370F2007B2F39 /* audio.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio.pcm; sourceTree = "<group>"; };
+		25C1D06F2073725B007B2F39 /* video.h264 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.h264; sourceTree = "<group>"; };
+		25C1D2B32074AFE5007B2F39 /* iframe.h264 */ = {isa = PBXFileReference; lastKnownFileType = file; path = iframe.h264; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25C1CFD92073275E007B2F39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C1CFF12073275E007B2F39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C1CFFC2073275E007B2F39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25C1CFD32073275E007B2F39 = {
+			isa = PBXGroup;
+			children = (
+				25C1CFDE2073275E007B2F39 /* HardDecoder */,
+				25C1CFF72073275E007B2F39 /* HardDecoderTests */,
+				25C1D0022073275E007B2F39 /* HardDecoderUITests */,
+				25C1CFDD2073275E007B2F39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25C1CFDD2073275E007B2F39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25C1CFDC2073275E007B2F39 /* HardDecoder.app */,
+				25C1CFF42073275E007B2F39 /* HardDecoderTests.xctest */,
+				25C1CFFF2073275E007B2F39 /* HardDecoderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25C1CFDE2073275E007B2F39 /* HardDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				25C1D02E2073497A007B2F39 /* sorttls */,
+				25C1D02520732A21007B2F39 /* src */,
+				25C1D011207327F7007B2F39 /* mediabox */,
+				25C1CFDF2073275E007B2F39 /* AppDelegate.h */,
+				25C1CFE02073275E007B2F39 /* AppDelegate.m */,
+				25C1CFE22073275E007B2F39 /* ViewController.h */,
+				25C1CFE32073275E007B2F39 /* ViewController.m */,
+				25C1CFE52073275E007B2F39 /* Main.storyboard */,
+				25C1CFE82073275E007B2F39 /* Assets.xcassets */,
+				25C1CFEA2073275E007B2F39 /* LaunchScreen.storyboard */,
+				25C1CFED2073275E007B2F39 /* Info.plist */,
+				25C1CFEE2073275E007B2F39 /* main.m */,
+			);
+			path = HardDecoder;
+			sourceTree = "<group>";
+		};
+		25C1CFF72073275E007B2F39 /* HardDecoderTests */ = {
+			isa = PBXGroup;
+			children = (
+				25C1CFF82073275E007B2F39 /* HardDecoderTests.m */,
+				25C1CFFA2073275E007B2F39 /* Info.plist */,
+			);
+			path = HardDecoderTests;
+			sourceTree = "<group>";
+		};
+		25C1D0022073275E007B2F39 /* HardDecoderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				25C1D0032073275E007B2F39 /* HardDecoderUITests.m */,
+				25C1D0052073275E007B2F39 /* Info.plist */,
+			);
+			path = HardDecoderUITests;
+			sourceTree = "<group>";
+		};
+		25C1D011207327F7007B2F39 /* mediabox */ = {
+			isa = PBXGroup;
+			children = (
+				25C1D05A20735878007B2F39 /* GKSurfaceView.h */,
+				25C1D05B20735878007B2F39 /* GKSurfaceView.mm */,
+				25C1D05020735506007B2F39 /* ParseFrame.h */,
+				25C1D05120735506007B2F39 /* ParseFrame.mm */,
+				25C1D03E20734A2B007B2F39 /* Parameter.h */,
+				25C1D031207349A2007B2F39 /* VideoPacket.h */,
+				25C1D030207349A2007B2F39 /* VideoPacket.m */,
+				25C1D01820732806007B2F39 /* AudioPlayer.h */,
+				25C1D01520732806007B2F39 /* AudioPlayer.mm */,
+				25C1D01320732806007B2F39 /* VideoPlayer.h */,
+				25C1D01220732806007B2F39 /* VideoPlayer.m */,
+			);
+			path = mediabox;
+			sourceTree = "<group>";
+		};
+		25C1D02520732A21007B2F39 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				25C1D2B32074AFE5007B2F39 /* iframe.h264 */,
+				25C1D06F2073725B007B2F39 /* video.h264 */,
+				25C1D06B207370F2007B2F39 /* audio.pcm */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		25C1D02E2073497A007B2F39 /* sorttls */ = {
+			isa = PBXGroup;
+			children = (
+				25C1D03A207349EC007B2F39 /* VideoFileParser.h */,
+				25C1D039207349EC007B2F39 /* VideoFileParser.m */,
+				25C1D04B20735018007B2F39 /* PacketSorter.h */,
+				25C1D04C20735018007B2F39 /* PacketSorter.m */,
+			);
+			path = sorttls;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25C1CFDB2073275E007B2F39 /* HardDecoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25C1D0082073275E007B2F39 /* Build configuration list for PBXNativeTarget "HardDecoder" */;
+			buildPhases = (
+				25C1CFD82073275E007B2F39 /* Sources */,
+				25C1CFD92073275E007B2F39 /* Frameworks */,
+				25C1CFDA2073275E007B2F39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HardDecoder;
+			productName = HardDecoder;
+			productReference = 25C1CFDC2073275E007B2F39 /* HardDecoder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25C1CFF32073275E007B2F39 /* HardDecoderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25C1D00B2073275E007B2F39 /* Build configuration list for PBXNativeTarget "HardDecoderTests" */;
+			buildPhases = (
+				25C1CFF02073275E007B2F39 /* Sources */,
+				25C1CFF12073275E007B2F39 /* Frameworks */,
+				25C1CFF22073275E007B2F39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25C1CFF62073275E007B2F39 /* PBXTargetDependency */,
+			);
+			name = HardDecoderTests;
+			productName = HardDecoderTests;
+			productReference = 25C1CFF42073275E007B2F39 /* HardDecoderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		25C1CFFE2073275E007B2F39 /* HardDecoderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25C1D00E2073275E007B2F39 /* Build configuration list for PBXNativeTarget "HardDecoderUITests" */;
+			buildPhases = (
+				25C1CFFB2073275E007B2F39 /* Sources */,
+				25C1CFFC2073275E007B2F39 /* Frameworks */,
+				25C1CFFD2073275E007B2F39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25C1D0012073275E007B2F39 /* PBXTargetDependency */,
+			);
+			name = HardDecoderUITests;
+			productName = HardDecoderUITests;
+			productReference = 25C1CFFF2073275E007B2F39 /* HardDecoderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25C1CFD42073275E007B2F39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "张乐昌";
+				TargetAttributes = {
+					25C1CFDB2073275E007B2F39 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					25C1CFF32073275E007B2F39 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 25C1CFDB2073275E007B2F39;
+					};
+					25C1CFFE2073275E007B2F39 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 25C1CFDB2073275E007B2F39;
+					};
+				};
+			};
+			buildConfigurationList = 25C1CFD72073275E007B2F39 /* Build configuration list for PBXProject "HardDecoder" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25C1CFD32073275E007B2F39;
+			productRefGroup = 25C1CFDD2073275E007B2F39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25C1CFDB2073275E007B2F39 /* HardDecoder */,
+				25C1CFF32073275E007B2F39 /* HardDecoderTests */,
+				25C1CFFE2073275E007B2F39 /* HardDecoderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25C1CFDA2073275E007B2F39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C1CFEC2073275E007B2F39 /* LaunchScreen.storyboard in Resources */,
+				25C1CFE92073275E007B2F39 /* Assets.xcassets in Resources */,
+				25C1D0702073725B007B2F39 /* video.h264 in Resources */,
+				25C1D2B42074AFE5007B2F39 /* iframe.h264 in Resources */,
+				25C1D06C207370F3007B2F39 /* audio.pcm in Resources */,
+				25C1CFE72073275E007B2F39 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C1CFF22073275E007B2F39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C1D2B52074AFE5007B2F39 /* iframe.h264 in Resources */,
+				25C1D06D207370F3007B2F39 /* audio.pcm in Resources */,
+				25C1D0712073725B007B2F39 /* video.h264 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C1CFFD2073275E007B2F39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C1D2B62074AFE5007B2F39 /* iframe.h264 in Resources */,
+				25C1D06E207370F3007B2F39 /* audio.pcm in Resources */,
+				25C1D0722073725B007B2F39 /* video.h264 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25C1CFD82073275E007B2F39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C1D05C20735878007B2F39 /* GKSurfaceView.mm in Sources */,
+				25C1D03B207349ED007B2F39 /* VideoFileParser.m in Sources */,
+				25C1CFE42073275E007B2F39 /* ViewController.m in Sources */,
+				25C1D01920732806007B2F39 /* VideoPlayer.m in Sources */,
+				25C1CFEF2073275E007B2F39 /* main.m in Sources */,
+				25C1CFE12073275E007B2F39 /* AppDelegate.m in Sources */,
+				25C1D04D20735018007B2F39 /* PacketSorter.m in Sources */,
+				25C1D01F20732807007B2F39 /* AudioPlayer.mm in Sources */,
+				25C1D033207349A2007B2F39 /* VideoPacket.m in Sources */,
+				25C1D05220735506007B2F39 /* ParseFrame.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C1CFF02073275E007B2F39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C1D03C207349ED007B2F39 /* VideoFileParser.m in Sources */,
+				25C1D05320735506007B2F39 /* ParseFrame.mm in Sources */,
+				25C1D02020732807007B2F39 /* AudioPlayer.mm in Sources */,
+				25C1CFF92073275E007B2F39 /* HardDecoderTests.m in Sources */,
+				25C1D034207349A2007B2F39 /* VideoPacket.m in Sources */,
+				25C1D01A20732807007B2F39 /* VideoPlayer.m in Sources */,
+				25C1D05D20735878007B2F39 /* GKSurfaceView.mm in Sources */,
+				25C1D04E20735018007B2F39 /* PacketSorter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C1CFFB2073275E007B2F39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C1D03D207349ED007B2F39 /* VideoFileParser.m in Sources */,
+				25C1D05420735506007B2F39 /* ParseFrame.mm in Sources */,
+				25C1D02120732807007B2F39 /* AudioPlayer.mm in Sources */,
+				25C1D0042073275E007B2F39 /* HardDecoderUITests.m in Sources */,
+				25C1D035207349A2007B2F39 /* VideoPacket.m in Sources */,
+				25C1D01B20732807007B2F39 /* VideoPlayer.m in Sources */,
+				25C1D05E20735878007B2F39 /* GKSurfaceView.mm in Sources */,
+				25C1D04F20735018007B2F39 /* PacketSorter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25C1CFF62073275E007B2F39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25C1CFDB2073275E007B2F39 /* HardDecoder */;
+			targetProxy = 25C1CFF52073275E007B2F39 /* PBXContainerItemProxy */;
+		};
+		25C1D0012073275E007B2F39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25C1CFDB2073275E007B2F39 /* HardDecoder */;
+			targetProxy = 25C1D0002073275E007B2F39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		25C1CFE52073275E007B2F39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25C1CFE62073275E007B2F39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		25C1CFEA2073275E007B2F39 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25C1CFEB2073275E007B2F39 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25C1D0062073275E007B2F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		25C1D0072073275E007B2F39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25C1D0092073275E007B2F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5XC59MJ75;
+				INFOPLIST_FILE = HardDecoder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Apple-iOS.HardDecoder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25C1D00A2073275E007B2F39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5XC59MJ75;
+				INFOPLIST_FILE = HardDecoder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Apple-iOS.HardDecoder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		25C1D00C2073275E007B2F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5XC59MJ75;
+				INFOPLIST_FILE = HardDecoderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Apple-iOS.HardDecoderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HardDecoder.app/HardDecoder";
+			};
+			name = Debug;
+		};
+		25C1D00D2073275E007B2F39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5XC59MJ75;
+				INFOPLIST_FILE = HardDecoderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Apple-iOS.HardDecoderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HardDecoder.app/HardDecoder";
+			};
+			name = Release;
+		};
+		25C1D00F2073275E007B2F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5XC59MJ75;
+				INFOPLIST_FILE = HardDecoderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Apple-iOS.HardDecoderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HardDecoder;
+			};
+			name = Debug;
+		};
+		25C1D0102073275E007B2F39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5XC59MJ75;
+				INFOPLIST_FILE = HardDecoderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Apple-iOS.HardDecoderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HardDecoder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25C1CFD72073275E007B2F39 /* Build configuration list for PBXProject "HardDecoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25C1D0062073275E007B2F39 /* Debug */,
+				25C1D0072073275E007B2F39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25C1D0082073275E007B2F39 /* Build configuration list for PBXNativeTarget "HardDecoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25C1D0092073275E007B2F39 /* Debug */,
+				25C1D00A2073275E007B2F39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25C1D00B2073275E007B2F39 /* Build configuration list for PBXNativeTarget "HardDecoderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25C1D00C2073275E007B2F39 /* Debug */,
+				25C1D00D2073275E007B2F39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25C1D00E2073275E007B2F39 /* Build configuration list for PBXNativeTarget "HardDecoderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25C1D00F2073275E007B2F39 /* Debug */,
+				25C1D0102073275E007B2F39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25C1CFD42073275E007B2F39 /* Project object */;
+}
